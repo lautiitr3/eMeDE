@@ -20,7 +20,7 @@
                 <input type="email" name="email" id="email" required>
             </div>
             <div>
-                <label for="password">Contraseña</label>
+                <label for="password">Contraseñ</label>
                 <input type="password" name="password" id="password" required>
             </div>
             <button type="submit">Ingresar</button>
