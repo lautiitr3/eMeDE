@@ -24,4 +24,20 @@ class PanelController extends Controller
         
         return view('panel', $data);
     }
+
+    public function inicio()
+    {
+        return view('inicio');
+    }
+
+    public function casas()
+    {
+        return view('casas');
+        
+    }
+
+    public function consumo()
+    {
+        return view('consumo');
+    }
 }
