@@ -1,10 +1,9 @@
-<!-- app/Views/casas/index.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Casas</title>
-    <link rel="stylesheet" href="<?= base_url('css/styles.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('css/styl.css') ?>">
 </head>
 <body>
     <div class="container">
@@ -14,19 +13,23 @@
                 <tr>
                     <th>ID</th>
                     <th>Nombre</th>
-                    <th>Dirección</th>
-                    <th>Precio</th>
+                    <th>Consumo</th>
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($casas as $casa): ?>
+                <?php if (isset($casas) && !empty($casas)): ?>
+                    <?php foreach ($casas as $casa): ?>
+                        <tr>
+                            <td><?= $casa['id_casas'] ?></td>
+                            <td><?= $casa['nombre_casa'] ?></td>
+                            <td><?= $casa['consumo'] ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                <?php else: ?>
                     <tr>
-                        <td><?= $casa['id'] ?></td>
-                        <td><?= $casa['nombre'] ?></td>
-                        <td><?= $casa['direccion'] ?></td>
-                        <td><?= $casa['precio'] ?></td>
+                        <td colspan="3">No hay casas disponibles.</td>
                     </tr>
-                <?php endforeach; ?>
+                <?php endif; ?>
             </tbody>
         </table>
         <button onclick="window.location.href='<?= base_url('casas/create') ?>'">Agregar Casa</button>
