@@ -2,24 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Agregar Casa</title>
+    <title>Casas</title>
     <link rel="stylesheet" href="<?= base_url('css/styles.css') ?>">
 </head>
 <body>
     <div class="container">
-        <h1>Agregar Casa</h1>
-        <form action="<?= base_url('casas/store') ?>" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required><br>
-
-            <label for="direccion">Dirección:</label>
-            <input type="text" id="direccion" name="direccion" required><br>
-
-            <label for="precio">Precio:</label>
-            <input type="number" id="precio" name="precio" required><br>
-
-            <input type="submit" value="Guardar">
-        </form>
+        <h1>Casas</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Consumo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php if (isset($casas) && !empty($casas)): ?>
+                    <?php foreach ($casas as $casa): ?>
+                        <tr>
+                            <td><?= $casa['id_casas'] ?></td>
+                            <td><?= $casa['nombre_casa'] ?></td>
+                            <td><?= $casa['consumo'] ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <tr>
+                        <td colspan="3">No hay casas disponibles.</td>
+                    </tr>
+                <?php endif; ?>
+            </tbody>
+        </table>
+        <button onclick="window.location.href='<?= base_url('casas/create') ?>'">Agregar Casa</button>
     </div>
 </body>
 </html>
