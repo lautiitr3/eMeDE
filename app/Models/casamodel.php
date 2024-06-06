@@ -7,6 +7,6 @@ use CodeIgniter\Model;
 class CasaModel extends Model
 {
     protected $table      = 'casas';
-    protected $primaryKey = 'id';
-    protected $allowedFields = ['nombre', 'direccion', 'precio'];
+    protected $primaryKey = 'id_casas';
+    protected $allowedFields = ['nombre_casa', 'consumo',];
 }

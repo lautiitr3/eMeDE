@@ -38,7 +38,7 @@ $routes->post('/register/store', 'UsuarioController::store');
 $routes->get('/panel', 'PanelController::index');
 $routes->get('/inicio', 'PanelController::inicio');
 $routes->get('/casas', 'PanelController::casas');
-$routes->get('/consumo', 'PanelController::consumo');
+$routes->get('/consumo', 'PanelController::consumo'); 
 $routes->get('/casas', 'Casas::index');
 $routes->get('/casas/create', 'Casas::create');
 $routes->post('/casas/store', 'Casas::store');

@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 use App\Models\ConsumoModel;
-use App\Models\DispositivoModel;
+use App\Models\casamodel;
 
 class PanelController extends Controller
 {
@@ -16,11 +16,11 @@ class PanelController extends Controller
         }
 
         $consumoModel = new ConsumoModel();
-        $dispositivoModel = new DispositivoModel();
+        $dispositivoModel = new casamodel();
         $id_usuario = $session->get('id_usuario');
         
         $data['consumos'] = $consumoModel->where('id_usuario', $id_usuario)->findAll();
-        $data['dispositivos'] = $dispositivoModel->findAll();
+        $data['casas'] = $dispositivoModel->findAll();
         
         return view('panel', $data);
     }

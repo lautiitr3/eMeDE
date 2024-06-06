@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Agregar Casa</title>
+    <title>Casas</title>
     <link rel="stylesheet" href="<?= base_url('css/styles.css') ?>">
 </head>
 <body>
@@ -18,8 +18,7 @@
             <label for="precio">Precio:</label>
             <input type="number" id="precio" name="precio" required><br>
 
-            <input type="submit" value="Guardar">
+            <button onclick="window.location.href='<?= base_url('casas/create') ?>'">Agregar Casa</button>
         </form>
-    </div>
 </body>
 </html>
