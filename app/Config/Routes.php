@@ -29,19 +29,18 @@ $routes->setAutoRoute(true);
  * --------------------------------------------------------------------
  */
 
-$routes->get('/', 'UsuarioController::index');
-$routes->get('/login', 'UsuarioController::index');
-$routes->post('/login/authenticate', 'UsuarioController::authenticate');
-$routes->get('/logout', 'UsuarioController::logout');
-$routes->get('/register', 'UsuarioController::register');
-$routes->post('/register/store', 'UsuarioController::store');
-$routes->get('/panel', 'PanelController::index');
-$routes->get('/inicio', 'PanelController::inicio');
-$routes->get('/casas', 'PanelController::casas');
-$routes->get('/consumo', 'PanelController::consumo'); 
-$routes->get('/casas', 'Casas::index');
-$routes->get('/casas/create', 'Casas::create');
-$routes->post('/casas/store', 'Casas::store');
+ $routes->get('/', 'UsuarioController::index');
+ $routes->get('/login', 'UsuarioController::index');
+ $routes->post('/login/authenticate', 'UsuarioController::authenticate');
+ $routes->get('/logout', 'UsuarioController::logout');
+ $routes->get('/register', 'UsuarioController::register');
+ $routes->post('/register/store', 'UsuarioController::store');
+ $routes->get('/panel', 'PanelController::index');
+ $routes->get('/inicio', 'PanelController::inicio');
+ $routes->get('/consumo', 'PanelController::consumo'); 
+ $routes->get('/casas', 'CasasController::index');
+ $routes->get('/casas/create', 'CasasController::create');
+ $routes->post('/casas/store', 'CasasController::store');
 
 
 /*

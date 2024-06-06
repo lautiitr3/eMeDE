@@ -20,7 +20,7 @@
                 <?php if (isset($casas) && !empty($casas)): ?>
                     <?php foreach ($casas as $casa): ?>
                         <tr>
-                            <td><?= $casa['id_casas'] ?></td>
+                            <td><?= $casa['id_casa'] ?></td>
                             <td><?= $casa['nombre_casa'] ?></td>
                             <td><?= $casa['consumo'] ?></td>
                         </tr>
