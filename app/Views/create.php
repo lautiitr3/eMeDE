@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Agregar Casa</h1>
+        <h1>Agregar Casas</h1>
         <form action="<?= base_url('casas/store') ?>" method="post">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required><br>
