@@ -41,7 +41,7 @@ $routes->setAutoRoute(true);
  $routes->get('/casas', 'CasasController::index');
  $routes->get('/casas/create', 'CasasController::create');
  $routes->post('/casas/store', 'CasasController::store');
-
+ $routes->get('/casas/delete/(:num)', 'CasasController::delete/$1');
 
 /*
  * --------------------------------------------------------------------

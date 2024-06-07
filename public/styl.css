@@ -6,12 +6,11 @@ body {
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+    width: 80%;
+    margin: 50px auto;
+    background: #fff;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -22,34 +21,61 @@ h1 {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
+    margin: 20px 0;
+    font-size: 1em;
+    min-width: 400px;
+    text-align: center;
 }
 
-th, td {
-    padding: 10px;
+table thead tr {
+    background-color: #45a049;
+    color: #ffffff;
     text-align: left;
-    border-bottom: 1px solid #ddd;
 }
 
-th {
-    background-color: #f2f2f2;
+table th, table td {
+    padding: 12px 15px;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #45a049;
+}
+
+table tbody tr.active-row {
     font-weight: bold;
-}
-
-tr:hover {
-    background-color: #f9f9f9;
+    color: #45a049;
 }
 
 button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #45a049;
+    color: #ffffff;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 1em;
 }
 
 button:hover {
     background-color: #45a049;
+}
+
+.delete-link {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.delete-link:hover {
+    text-decoration: underline;
 }

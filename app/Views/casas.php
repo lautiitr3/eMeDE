@@ -14,6 +14,9 @@
                     <th>ID</th>
                     <th>Nombre</th>
                     <th>Consumo</th>
+                    <th>Dirección</th>
+                    <th>Ciudad</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -23,11 +26,16 @@
                             <td><?= $casa['id_casa'] ?></td>
                             <td><?= $casa['nombre_casa'] ?></td>
                             <td><?= $casa['consumo'] ?></td>
+                            <td><?= $casa['calle'] . ' ' . $casa['numero'] ?></td>
+                            <td><?= $casa['nombre_ciudad'] ?></td>
+                            <td>
+                                <a href="<?= base_url('casas/delete/' . $casa['id_casa']) ?>" onclick="return confirm('¿Estás seguro de que deseas eliminar esta casa?');">X</a>
+                            </td>
                         </tr>
                     <?php endforeach; ?>
                 <?php else: ?>
                     <tr>
-                        <td colspan="3">No hay casas disponibles.</td>
+                        <td colspan="6">No hay casas disponibles.</td>
                     </tr>
                 <?php endif; ?>
             </tbody>
