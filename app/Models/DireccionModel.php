@@ -8,5 +8,5 @@ class DireccionModel extends Model
 {
     protected $table      = 'direcciones';
     protected $primaryKey = 'id_direccion';
-    protected $allowedFields = ['id_ciudad', 'numero', 'calle']; // Asegúrate de agregar los campos necesarios
+    protected $allowedFields = ['id_ciudad', 'numero', 'calle']; 
 }

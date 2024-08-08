@@ -16,6 +16,7 @@
                     <th>Consumo</th>
                     <th>Dirección</th>
                     <th>Ciudad</th>
+                    <th>Barrio</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
@@ -28,6 +29,7 @@
                             <td><?= $casa['consumo'] ?></td>
                             <td><?= $casa['calle'] . ' ' . $casa['numero'] ?></td>
                             <td><?= $casa['nombre_ciudad'] ?></td>
+                            <td><?= $casa['nombre_barrio']?></td>
                             <td>
                                 <a href="<?= base_url('casas/delete/' . $casa['id_casa']) ?>" onclick="return confirm('¿Estás seguro de que deseas eliminar esta casa?');">X</a>
                             </td>

@@ -8,5 +8,5 @@ class CiudadModel extends Model
 {
     protected $table      = 'ciudades';
     protected $primaryKey = 'id_ciudad';
-    protected $allowedFields = ['nombre_ciudad']; // Asegúrate de agregar los campos necesarios
+    protected $allowedFields = ['nombre_ciudad']; 
 }
