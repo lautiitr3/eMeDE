@@ -20,7 +20,7 @@ body {
 
 .nav-item {
     padding: 10px 20px;
-    background-color: #45a049;
+    background-color: #87ade7;
     color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
@@ -28,5 +28,5 @@ body {
 }
 
 .nav-item:hover {
-    background-color: #45a049;
+    background-color: #87ade7;
 }

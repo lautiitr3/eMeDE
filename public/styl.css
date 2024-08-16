@@ -28,7 +28,7 @@ table {
 }
 
 table thead tr {
-    background-color: #45a049;
+    background-color: #87ade7;
     color: #ffffff;
     text-align: left;
 }
@@ -46,12 +46,12 @@ table tbody tr:nth-of-type(even) {
 }
 
 table tbody tr:last-of-type {
-    border-bottom: 2px solid #45a049;
+    border-bottom: 2px solid #87ade7;
 }
 
 table tbody tr.active-row {
     font-weight: bold;
-    color: #45a049;
+    color: #87ade7;
 }
 
 button {
@@ -59,7 +59,7 @@ button {
     width: 200px;
     margin: 20px auto;
     padding: 10px;
-    background-color: #45a049;
+    background-color: #87ade7;
     color: #ffffff;
     border: none;
     cursor: pointer;
@@ -67,7 +67,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #87ade7;
 }
 
 .delete-link {

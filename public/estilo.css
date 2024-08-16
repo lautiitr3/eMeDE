@@ -14,7 +14,7 @@ body {
 
 /* Estilos para encabezados */
 h2 {
-    color: #4caf50;
+    color: #87ade7;
     margin-bottom: 20px;
 }
 
@@ -35,13 +35,13 @@ th, td {
 }
 
 th {
-    background-color: #4caf50;
+    background-color: #87ade7;
     color: white;
 }
 
 /* Estilos para enlaces */
 a {
-    color: #4caf50;
+    color: #87ade7;
     text-decoration: none;
 }
 

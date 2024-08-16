@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="<?= base_url('/style.css') ?>">
+    <title>Inicio</title>
+    <link rel="icon" type="image/png" href="<?= base_url('imagenes/3.png') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= base_url('/estilito.css') ?>">
 </head>
 <body>
     <div class="container">
         <div class="title-container">
-            <h2>Login</h2>
+            <h2>Inicio</h2>
         </div>
         <?php if (session()->getFlashdata('msg')): ?>
             <div>

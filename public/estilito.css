@@ -48,7 +48,7 @@ input[type="text"] {
 }
 
 button {
-    background-color: #87ade7;
+    background-color: #7aa9ff;
     color: #ffffff;
     padding: 10px 20px;
     border: none;
@@ -58,7 +58,7 @@ button {
 }
 
 button:hover {
-    background-color: #87ade7;
+    background-color: #88aae9;
 }
 
 p {
@@ -67,7 +67,7 @@ p {
 }
 
 a {
-    color: #87ade7;
+    color: #83a7e9;
     text-decoration: none;
 }
 
